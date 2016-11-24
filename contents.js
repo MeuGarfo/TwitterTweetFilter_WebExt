@@ -6,6 +6,7 @@ function handleMessage(request, sender, sendResponse) {
   //console.log(request.greeting);
 	g_text = request.greeting;
   //sendResponse({response: "hi from content script"});
+	main();
 }
 
 chrome.runtime.onMessage.addListener(handleMessage);

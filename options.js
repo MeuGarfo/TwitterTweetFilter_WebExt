@@ -41,6 +41,7 @@ function saveOptions(e) {
     nglist: document.querySelector("#nglist").value
   });
   //console.log("chrome.tabs.query() start");
+  //chrome.tabs.query({url: "*://twitter.com*"}, sendMessageToTab);
   chrome.tabs.query({}, sendMessageToTab);
 }
 
