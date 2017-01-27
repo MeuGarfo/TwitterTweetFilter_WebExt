@@ -50,6 +50,7 @@ function restoreOptions() {
 	chrome.storage.local.get("nglist", (res) => {
 		document.querySelector("#nglist").value = res.nglist || "";
 	});
+	chrome.tabs.query({}, sendMessageToTab);
 }
 
 
