@@ -37,6 +37,7 @@ function sendMessageToTab(tabs) {
 }
 
 function saveOptions(e) {
+	//confirm("saved.");
 	//console.log("saveOptions() start");
 	chrome.storage.local.set({
 		nglist: document.querySelector("#nglist").value
